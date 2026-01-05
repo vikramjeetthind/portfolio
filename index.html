@@ -1,106 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vikramjeet Singh | Web Developer</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vikramjeet Singh | Web Developer</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- HERO -->
-<header class="hero">
-  <nav>
-    <h2>Vikramjeet Singh</h2>
-    <a class="hire-btn" href="#hire">Hire Me</a>
-  </nav>
-
+<!-- ================= HERO ================= -->
+<section class="hero">
   <div class="hero-content">
-    <h1>Designing Digital Solutions<br><span>That Convert & Scale</span></h1>
-    <p>Web Developer specializing in WordPress, Shopify, Webflow & Custom Solutions.</p>
-    <div class="cta">
-      <a href="#hire" class="primary">Hire Me</a>
-      <a href="#portfolio" class="secondary">View Work</a>
+    <h1>Designing Digital Solutions<br><span>That Inspire & Impact</span></h1>
+    <p>
+      Hi, I’m <strong>Vikramjeet Singh</strong> — a full-stack web developer
+      specializing in WordPress, Shopify, Webflow & custom web solutions.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#hire" class="btn primary">Hire Me</a>
+      <a href="#portfolio" class="btn secondary">View Work</a>
     </div>
   </div>
-</header>
 
-<!-- SERVICES -->
-<section class="services">
-  <h2>My Services</h2>
-  <div class="service-grid">
-    <div>Web Design</div>
-    <div>Web Development</div>
-    <div>WordPress Development</div>
-    <div>Shopify Store Development</div>
-    <div>Webflow Development</div>
-    <div>Squarespace Development</div>
-    <div>Custom Coding</div>
-    <div>Web Applications</div>
-    <div>SEO Services</div>
-    <div>Google Ads</div>
-    <div>Social Media Management</div>
+  <!-- floating icons -->
+  <div class="floating-icons">
+    <i class="fab fa-wordpress"></i>
+    <i class="fab fa-shopify"></i>
+    <i class="fab fa-js"></i>
   </div>
 </section>
 
-<!-- PORTFOLIO -->
+<!-- ================= SERVICES ================= -->
+<section class="services">
+  <h2>Our Services</h2>
+  <p class="sub">Complete digital solutions under one roof</p>
+
+  <div class="service-grid">
+    <div class="card"><i class="fas fa-laptop-code"></i><h3>Web Design</h3></div>
+    <div class="card"><i class="fas fa-code"></i><h3>Web Development</h3></div>
+    <div class="card"><i class="fab fa-wordpress"></i><h3>WordPress (From Scratch)</h3></div>
+    <div class="card"><i class="fab fa-shopify"></i><h3>Shopify Stores</h3></div>
+    <div class="card"><i class="fas fa-layer-group"></i><h3>Webflow</h3></div>
+    <div class="card"><i class="fas fa-cube"></i><h3>Squarespace</h3></div>
+    <div class="card"><i class="fas fa-terminal"></i><h3>Custom Code / Web Apps</h3></div>
+    <div class="card"><i class="fas fa-search"></i><h3>SEO Services</h3></div>
+    <div class="card"><i class="fas fa-bullhorn"></i><h3>Google Ads</h3></div>
+    <div class="card"><i class="fas fa-share-alt"></i><h3>Social Media Management</h3></div>
+  </div>
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
 <section id="portfolio" class="portfolio">
   <h2>Portfolio</h2>
 
   <div class="tabs">
-    <button class="tab active" onclick="openTab('wp')">WordPress</button>
-    <button class="tab" onclick="openTab('shopify')">Shopify</button>
-    <button class="tab" onclick="openTab('webflow')">Webflow</button>
-    <button class="tab" onclick="openTab('custom')">Custom Code</button>
+    <button class="tab active" onclick="filterProjects('all')">All</button>
+    <button class="tab" onclick="filterProjects('wordpress')">WordPress</button>
+    <button class="tab" onclick="filterProjects('shopify')">Shopify</button>
+    <button class="tab" onclick="filterProjects('webflow')">Webflow</button>
   </div>
 
-  <div id="wp" class="tab-content active">
-    <div class="card">Business Website – Custom Theme</div>
-    <div class="card">Landing Page – Elementor</div>
-  </div>
-
-  <div id="shopify" class="tab-content">
-    <div class="card">Shopify Store Setup</div>
-    <div class="card">Product Page Optimization</div>
-  </div>
-
-  <div id="webflow" class="tab-content">
-    <div class="card">Webflow Portfolio Site</div>
-    <div class="card">Responsive Business Website</div>
-  </div>
-
-  <div id="custom" class="tab-content">
-    <div class="card">HTML/CSS/JS Landing Page</div>
-    <div class="card">Custom UI Development</div>
+  <div class="projects">
+    <div class="project wordpress">WordPress Business Website</div>
+    <div class="project shopify">Shopify E-commerce Store</div>
+    <div class="project webflow">Webflow Landing Page</div>
+    <div class="project wordpress">Custom WordPress Theme</div>
   </div>
 </section>
 
-<!-- WHY ME -->
-<section class="why">
-  <h2>Why Hire Me</h2>
-  <ul>
-    <li>Client-focused communication</li>
-    <li>Clean & scalable code</li>
-    <li>On-time delivery</li>
-    <li>Multi-platform expertise</li>
-    <li>Long-term support mindset</li>
-  </ul>
+<!-- ================= SKILLS & TOOLS ================= -->
+<section class="skills">
+  <h4>TECHNOLOGIES</h4>
+  <h2>Skills & Tools</h2>
+  <p>Technologies I use to bring your projects to life</p>
+
+  <div class="skills-grid">
+    <div class="skill"><i class="fab fa-wordpress"></i><span>WordPress</span></div>
+    <div class="skill"><i class="fab fa-shopify"></i><span>Shopify</span></div>
+    <div class="skill"><i class="fas fa-layer-group"></i><span>Webflow</span></div>
+    <div class="skill"><i class="fas fa-cube"></i><span>Squarespace</span></div>
+    <div class="skill"><i class="fab fa-html5"></i><span>HTML5</span></div>
+    <div class="skill"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+    <div class="skill"><i class="fab fa-js"></i><span>JavaScript</span></div>
+    <div class="skill"><i class="fab fa-php"></i><span>PHP</span></div>
+    <div class="skill"><i class="fas fa-database"></i><span>MySQL</span></div>
+    <div class="skill"><i class="fab fa-figma"></i><span>Figma</span></div>
+    <div class="skill"><i class="fab fa-git-alt"></i><span>Git</span></div>
+  </div>
+
+  <div class="pills">
+    <span>SEO</span>
+    <span>Google Ads</span>
+    <span>Responsive Design</span>
+  </div>
 </section>
 
-<!-- HIRE -->
+<!-- ================= HIRE SECTION ================= -->
 <section id="hire" class="hire">
-  <h2>Let’s Work Together</h2>
-  <p>Hire me on your preferred freelance platform</p>
+  <h2>Ready to Work With Me?</h2>
+  <p>Hire me on your favorite platform</p>
 
   <div class="hire-buttons">
-    <a href="https://www.upwork.com/" target="_blank">Upwork</a>
-    <a href="https://www.fiverr.com/" target="_blank">Fiverr</a>
-    <a href="https://www.freelancer.com/" target="_blank">Freelancer</a>
+    <a href="#" class="hire-btn upwork"><i class="fab fa-upwork"></i> Upwork</a>
+    <a href="#" class="hire-btn fiverr"><i class="fas fa-briefcase"></i> Fiverr</a>
+    <a href="#" class="hire-btn freelancer"><i class="fas fa-user-tie"></i> Freelancer</a>
   </div>
 </section>
 
+<!-- ================= FOOTER ================= -->
 <footer>
-  <p>© 2026 Vikramjeet Singh — Web Developer</p>
+  <p>© 2026 Vikramjeet Singh · All Rights Reserved</p>
 </footer>
 
 <script src="script.js"></script>

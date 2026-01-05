@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: #111;
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 22px;
+  background: #2563eb;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.btn.secondary {
+  background: #444;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.grid div,
+.card {
+  padding: 15px;
+  background: #f4f4f4;
+  border-radius: 6px;
+}
+
+.tabs {
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 16px;
+  border: none;
+  background: #ddd;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.tab-btn.active {
+  background: #2563eb;
+  color: #fff;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+form {
+  max-width: 500px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+form button {
+  padding: 12px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  width: 100%;
+}
+
+.note {
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #fff;
+}

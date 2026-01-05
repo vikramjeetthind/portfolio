@@ -1,34 +1,111 @@
-*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Arial,sans-serif}
-body{color:#222;background:#fff}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,Arial}
+body{background:#f9fbff;color:#222}
 
-.hero{background:linear-gradient(135deg,#1e3a8a,#2563eb);color:#fff;padding:60px}
-nav{display:flex;justify-content:space-between;align-items:center}
-.hire-btn{background:#fff;color:#2563eb;padding:10px 18px;border-radius:20px;text-decoration:none}
+/* HERO */
+.hero{
+  min-height:100vh;
+  background:linear-gradient(135deg,#5f5bff,#8a6cff,#ff7adf);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+  position:relative;
+}
+.hero h1 span{color:#ffe9ff}
+.hero-buttons{margin-top:30px}
+.btn{
+  padding:14px 28px;
+  border-radius:30px;
+  text-decoration:none;
+  margin:0 10px;
+  font-weight:600;
+}
+.primary{background:#fff;color:#5f5bff}
+.secondary{border:2px solid #fff;color:#fff}
 
-.hero-content{text-align:center;margin-top:60px}
-.hero-content h1 span{color:#facc15}
+/* SERVICES */
+.services{text-align:center;padding:80px 10%}
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;margin-top:40px
+}
+.card{
+  background:#fff;
+  padding:30px;
+  border-radius:18px;
+  box-shadow:0 15px 40px rgba(0,0,0,.08);
+  transition:.3s;
+}
+.card:hover{transform:translateY(-8px)}
+.card i{font-size:32px;color:#5f5bff;margin-bottom:15px}
 
-.cta a{margin:10px;padding:12px 22px;border-radius:8px;text-decoration:none}
-.primary{background:#facc15;color:#000}
-.secondary{border:1px solid #fff;color:#fff}
+/* PORTFOLIO */
+.portfolio{text-align:center;padding:80px 10%}
+.tabs button{
+  padding:10px 20px;
+  border:none;
+  background:#eee;
+  border-radius:20px;
+  margin:5px;
+  cursor:pointer;
+}
+.tabs .active{background:#5f5bff;color:#fff}
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;margin-top:30px
+}
+.project{
+  background:#fff;
+  padding:40px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08)
+}
 
-section{padding:70px 20px;max-width:1100px;margin:auto}
-h2{text-align:center;margin-bottom:40px}
+/* SKILLS */
+.skills{text-align:center;padding:80px 10%}
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:20px;margin-top:40px
+}
+.skill{
+  background:#fff;
+  padding:20px;
+  border-radius:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,.06)
+}
+.skill i{font-size:32px;color:#5f5bff;margin-bottom:10px}
+.pills span{
+  display:inline-block;
+  margin:10px;
+  padding:8px 18px;
+  border-radius:20px;
+  border:1px solid #ddd;
+}
 
-.service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
-.service-grid div,.card{background:#f4f6fb;padding:18px;border-radius:10px;text-align:center}
+/* HIRE */
+.hire{
+  text-align:center;
+  padding:80px 10%;
+  background:linear-gradient(135deg,#5f5bff,#8a6cff)
+}
+.hire h2,.hire p{color:#fff}
+.hire-buttons{margin-top:30px}
+.hire-btn{
+  display:inline-block;
+  margin:10px;
+  padding:14px 26px;
+  border-radius:30px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+}
+.upwork{background:#14a800}
+.fiverr{background:#1dbf73}
+.freelancer{background:#0077ff}
 
-.tabs{text-align:center;margin-bottom:25px}
-.tab{padding:10px 18px;border:none;background:#e5e7eb;margin:5px;border-radius:20px;cursor:pointer}
-.tab.active{background:#2563eb;color:#fff}
-
-.tab-content{display:none;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px}
-.tab-content.active{display:grid}
-
-.why ul{max-width:500px;margin:auto;list-style:none}
-.why li{padding:10px}
-
-.hire{text-align:center;background:#111;color:#fff}
-.hire-buttons a{display:inline-block;margin:10px;padding:14px 26px;background:#2563eb;color:#fff;border-radius:30px;text-decoration:none}
-
-footer{text-align:center;padding:20px;background:#0f172a;color:#fff}
+/* FOOTER */
+footer{text-align:center;padding:20px;background:#111;color:#aaa}
